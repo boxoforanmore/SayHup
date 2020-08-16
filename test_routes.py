@@ -20,7 +20,6 @@ def client():
 ##################
 ## Landing Page ##
 ##################
-
 def test_landing_page(client):
     rv = client.get('/')
     assert rv.status_code == 200
