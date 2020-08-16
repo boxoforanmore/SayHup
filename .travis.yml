@@ -1,0 +1,14 @@
+
+os: linux
+
+dist: trusty
+
+language: python
+
+python:
+  - "3.7.6"
+
+script:
+  - pip install --upgrade pip > /dev/null
+  - pip install -r ./requirements/requirements.txt > /dev/null
+  - cd ./tests/ && pytest && cd ..
