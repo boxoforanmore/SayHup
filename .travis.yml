@@ -6,7 +6,7 @@ dist: trusty
 language: python
 
 python:
-  - "3.7.6"
+  - "3.7"
 
 script:
   - pip install --upgrade pip > /dev/null
