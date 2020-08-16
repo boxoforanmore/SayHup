@@ -6,9 +6,11 @@ dist: trusty
 language: python
 
 python:
-  - "3.7"
+  - "3.7.8"
 
-script:
+install:
   - pip install --upgrade pip > /dev/null
   - pip install -r requirements.txt > /dev/null
+
+script:
   - cd ./tests/ && pytest && cd ..
